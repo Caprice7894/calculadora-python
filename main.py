@@ -18,7 +18,6 @@ class MyWindow(QMainWindow):
         self.win.pushButton_clear.clicked.connect(self.clear_input)
         self.win.buttonGroup_numeros.buttonClicked.connect(self.append_number)
         self.win.pushButton_result.clicked.connect(self.calcular)
-        self.win.input.returnPressed.connect(self.calcular)
 
     def calcular(self):
         result = eval(self.win.input.toPlainText())
